@@ -1,0 +1,54 @@
+header {
+  position: relative;
+}
+#firstrow {
+  font-family: Abril Fatface;
+  font: 40px;
+  color: #222;
+  position: absolute;
+  left: 200px;
+  bottom: 80px;
+}
+#secondrow {
+  font-family: Abril Fatface;
+  font-size: 70px;
+  color: #222;
+  position: absolute;
+  left: 200px;
+  bottom: -30px;
+}
+p, li{
+  margin: 10px 250px 10px 250px;
+  font-family: Josefin Sans;
+  font-size: 20px;
+  color: #222;
+  list-style: square;
+}
+blockquote {
+  margin: 20px 250px 20px 250px;
+  background: #222;
+  text-align: center;
+  font-family: Abril Fatface;
+  font-size: 40px;
+  color: white;
+}
+blockquote::before {
+  content: '”';
+  font-size: 80px;
+}
+
+h2 {
+  font-family: Merriweather;
+  font: italic;
+  margin: 30px 250px 30px 250px;
+}
+h3 {
+  font-family: Merriweather italic;
+  font-size: 20px italic;
+  margin: 0 250px 10px 250px;
+}
+HR {
+  margin: 0 250px 10px 250px;
+  height: 3px;
+  background: black;
+}

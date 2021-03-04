@@ -1,0 +1,66 @@
+header {
+  background-color: black;
+  width: 500px;
+  margin: auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+  }
+.container {
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.item {
+  width: 250px;
+}
+#firstrow {
+  font-family: Abril Fatface;
+  font-size: 20px;
+  color: #222;
+  position: absolute;
+  left: 10px;
+  top: 140px;
+}
+#secondrow {
+  font-family: Abril Fatface;
+  font-size: 36px;
+  color: #222;
+  position: absolute;
+  left: 10px;
+  top: 150px;
+}
+p, li{
+  font-family: Josefin Sans;
+  font-size: 14px;
+  color: #222;
+  list-style: square;
+}
+blockquote {
+  background: #222;
+  font-family: Abril Fatface;
+  font-size: 30px;
+  color: white;
+}
+blockquote::before {
+  content: '”';
+  font-size: 40px;
+}
+
+h2 {
+  font-family: Merriweather;
+  font-size: 14px;
+}
+h3 {
+  font-family: Merriweather italic;
+  font-size: 14px;
+}
