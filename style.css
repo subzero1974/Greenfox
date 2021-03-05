@@ -1,0 +1,10 @@
+a:link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    background-color: yellow;
+    border: 2px solid blue;
+}
+a:hover, a:active {
+    background-color: orange;
+  }

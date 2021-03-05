@@ -1,0 +1,27 @@
+#blue {
+    width: 500px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+.blueBox {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    margin: 10px 5px 10px 5px;
+}
+#orange {
+    width: 500px;
+    border: 2px solid blue;
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+.purpleBox {
+    width: 40px;
+    height: 40px;
+    background-color: purple;
+    margin: 10px 5px 10px 5px;
+}
