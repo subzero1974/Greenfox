@@ -6,6 +6,5 @@ $("#addTodo").click(() => {
 $("#delTodo").click(() => {
   todo=$("#todoMezo").val();
   $("li:last").remove ();
-
   })
 
