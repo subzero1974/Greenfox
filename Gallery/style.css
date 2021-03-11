@@ -1,3 +1,7 @@
+body {
+    background-color: lightgrey;
+
+}
 #upper {
     box-shadow: 0px 0px 10px grey;
     margin: auto;
@@ -29,4 +33,37 @@
     color: white;
     font-size: 14px;
     margin: 10px 0 0 20px;
+}
+#thumbnails {
+    margin: 20px auto 20px auto;
+    width: 640px;
+    height: 80px;
+    display: flex;
+}
+.thumbPic {
+    border: 3px solid white;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    position: relative;
+}
+#leftArrow:hover, #rightArrow:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+img.active {
+    box-shadow: 0 0 10px black;
+}
+.title {
+    display: none;
+    position: relative;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    top: 0px;
+}
+  
+.thumbPic:hover .title {
+    display: block;
 }

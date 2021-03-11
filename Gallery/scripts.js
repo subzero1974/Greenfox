@@ -14,6 +14,7 @@ function display() {
   $('#photo').attr('src', imagesData[currentPhoto]);
   $('#photo-title').text(titleData[currentPhoto]);
   $('#photo-description').text(descriptionData[currentPhoto]);
+
 }
 display();
 $("#leftArrow").click(() => {
@@ -21,6 +22,7 @@ $("#leftArrow").click(() => {
   if (currentPhoto == -1) {
     currentPhoto = 7;
   }
+  $('.thumbPic').removeClass('active');
   display();
 })
 $("#rightArrow").click(() => {
@@ -28,5 +30,19 @@ $("#rightArrow").click(() => {
   if (currentPhoto == 8) {
     currentPhoto = 0;
   }
+  $('.thumbPic').removeClass('active');
   display();
 })
+function displayThumbs(pict, index) {
+  $("#thumbnails").append(`<img src=${pict} data-index=${index} class="thumbPic"></img>`);
+}
+imagesData.forEach(displayThumbs);
+$(".thumbPic").click((event) => {
+  currentPhoto = $(event.target).attr('data-index');
+  currentPhoto = parseInt(currentPhoto);
+  display();
+})
+$('.thumbPic').click(function() {
+  $('.thumbPic').not(this).removeClass('active');
+  $(this).addClass('active');
+});
